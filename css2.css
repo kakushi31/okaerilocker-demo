@@ -19,7 +19,7 @@ html {
     max-width: 100%;
   }
 
-  #container {
+  .container {
     width: 760px;
     margin: 0 auto;
   }

@@ -1,0 +1,186 @@
+/* Reset styles */
+@charset "UTF-8";
+html {
+    font-size: 100%;
+  }
+  
+  body {
+    font-family: "M PLUS Rounded 1c", helvetica, sans-serif;
+    line-height: 1.7;
+    font-style: normal;
+    color: #432;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+  #container {
+    width: 760px;
+    margin: 0 auto;
+  }
+  
+  /* Utility classes */
+  .align-center {
+    text-align: center;
+  }
+  
+  .btn {
+    width: 150px;
+    background: hsl(184, 54%, 84%);
+    border: solid 1px #aaa;
+    padding: 5px;
+  }
+  
+  /* Header styles */
+  header.page-header {
+    padding-top: 0.5rem;
+    padding-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  .logo {
+    height: 40px;
+    border: solid 1px black;
+  }
+  
+  .main-nav ul li {
+    display: inline;
+    padding: 20px;
+  }
+  
+.main-nav {
+    text-align: center;
+  }
+  
+  /* Hero styles */
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  section.hero p {
+    text-align: center;
+  }
+
+  .hero {
+    border: solid 2px #ccc;
+    padding: 30px 0;
+  }
+  
+  .hero-book-now {
+    margin-top: 10px;
+  }
+  
+  /* Flow styles */
+  section.flow {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  p.flow-title {
+    font-size: 30px;
+    color: #aaa;
+  }
+  
+  .flow-exp {
+    font-size: 13px;
+  }
+  
+  .flow-process {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: flex-start;
+    gap: 10px;
+}
+
+  .flow-box {
+    border: solid 1px #333;
+    width: 300px;
+    background: #ddd;
+    padding: 20px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  /* Review styles */
+  .review {
+    text-align: left;
+    margin-top: 30px;
+    padding: 10px 30px 10px 30px;
+  }
+  
+  #review-desc {
+    margin-bottom: 20px;
+  }
+  
+  .reviews {
+
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px; 
+    overflow-x: auto;
+    padding: 20px ;
+    gap: 20px;
+    position: relative;
+}
+
+  .review-box {
+    border: solid 1px #333;
+    background: #ddd;
+    padding: 20px;
+    text-align: left;
+    border-radius: 15px;
+    width: 300px;
+    height: 150px;
+  }
+  
+  .review-box p {
+    text-align: left;
+  }
+  
+  .review-box h3 {
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  /* Booking Form styles */
+  input {
+    border: solid 1px #999;
+  }
+  
+  #BOOK-NOW {
+    margin-bottom: 20px;
+  }
+  
+  .booking {
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+  #img-booking {
+    padding: 0 20px;
+    width: 400px;
+  }
+
+  /* Footer styles */
+  nav.footer-nav {
+    text-align: right;
+  }
+  
+  .page-footer ul li {
+    display: inline;
+    padding: 5px;
+  }

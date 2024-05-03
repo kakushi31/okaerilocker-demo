@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Okaeri Locker</title>
+    <meta name="description" content="Rent a space to store your luggage until you come back to Japan">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css2.css">
+    <script rel="function" src="javascript.js"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <h1 class="align-center">
+            <a href="html.html"><img class="logo" src="images/travel-icon.png" alt="Okaeri Locker Home"></a>
+            Okaeri Locker
+        </h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="how to use and pricing.html">How to use & Pricing</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact us.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+        <section class="hero">
+            <h2 class="page-title">Okaeri Locker</h2>
+            <p>Cras varius. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo.</p>
+            <p>Etiam ut purus mattis mauris sodales aliquam. Vivamus elementum semper nisi.</p>
+            <br>
+            <div class="align-center hero-book-now">
+                <a class="btn" href="#BOOK-NOW">Book Now!</a>
+            </div>
+        </section>
+
+        <section class="flow">
+            <h3 class="heading-large">Flow until storage</h3>
+            <p>We will explain about reservations, payments, delivery methods and pick-up.</p>
+        </section>
+
+        <section class="flow-process">
+            <div class="flow-box">
+                <p class="flow-title">01</p>
+                <h3>Book</h3>
+                <p class="flow-exp">Fusce egestas elit eget lorem. Donec vitae orci sed dolor rutru.</p>
+            </div>
+            <div class="flow-box">
+                <p class="flow-title">02</p>
+                <h3>Confirmation</h3>
+                <p class="flow-exp">Fusce egestas elit eget lorem. Donec vitae orci sed dolor rutru.</p>
+            </div>
+            <div class="flow-box">
+                <p class="flow-title">03</p>
+                <h3>Payment</h3>
+                <p class="flow-exp">Fusce egestas elit eget lorem. Donec vitae orci sed dolor rutru.</p>
+            </div>
+            <div class="flow-box">
+                <p class="flow-title">04</p>
+                <h3>Send your luggage</h3>
+                <p class="flow-exp">Fusce egestas elit eget lorem. Donec vitae orci sed dolor rutru.</p>
+            </div>
+            <div class="flow-box">
+                <p class="flow-title">05</p>
+                <h3>Enjoy your stay</h3>
+                <p class="flow-exp">Fusce egestas elit eget lorem. Donec vitae orci sed dolor rutru.</p>
+            </div>
+            <div class="flow-box">
+                <p class="flow-title">06</p>
+                <h3>Receive your luggage</h3>
+                <p class="flow-exp">Fusce egestas elit eget lorem. Donec vitae orci sed dolor rutru.</p>
+            </div>
+        </section>
+
+        <section class="review">
+            <h3 class="heading-large">What others say</h3>
+            <p id="review-desc">These are testimonials from customers who have used Okaeri Locker.</p>
+            <div class="align-center">
+                <a class="btn" id="review-book-now" href="#BOOK-NOW">Book Now!</a>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="review-box">
+                <p class="review-title">☆☆☆☆☆</p>
+                <p class="review-exp">Fusce egestas elit eget lorem. Donec vitae orci sed dolor rutru.</p>
+                <h3>K.Misaki</h3>
+            </div>
+            <div class="review-box">
+                <p class="review-title">☆☆☆☆☆</p>
+                <p class="review-exp">Fusce egestas elit eget lorem. Donec vitae orci sed dolor rutru.</p>
+                <h3>M.Ilyas</h3>
+            </div>
+            <div class="review-box">
+                <p class="review-title">☆☆☆☆☆</p>
+                <p class="review-exp">Fusce egestas elit eget lorem. Donec vitae orci sed dolor rutru.</p>
+                <h3>A.Yuichiro</h3>
+            </div>
+            <div class="review-box">
+                <p class="review-title">☆☆☆☆☆</p>
+                <p class="review-exp">Fusce egestas elit eget lorem. Donec vitae orci sed dolor rutru.</p>
+                <h3>H.Ryota</h3>
+            </div>
+        </section>
+
+        <section class="booking">
+            <div id="img-booking">
+                <img src="images/travel-icon.png" alt="Okaeri Locker Home">
+            </div>
+            <form action="example.php" method="post" name="booking-form" id="bookingForm" onsubmit="return validateForm()">
+                <h3 id="BOOK-NOW">Book now</h3>
+                <label>Name</label>
+                <input type="text" placeholder="Name as in passport" maxlength="50" required>
+                <br><br>
+                <label>Email</label>
+                <input type="email" placeholder="example@example.com" maxlength="50" required>
+                <br><br>
+                <div class="phone-inputs">
+                    <label>Phone</label>
+                    <input type="text" id="countryCode" name="countryCode" placeholder="+Code" style="width: 60px;" maxlength="4" required>
+                    <input type="telephone" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" maxlength="15" required>
+                </div>
+                <br>
+                <label>From</label>
+                <input type="date" placeholder="YYYY-MM-DD" id="fromDate" name="fromDate" required>
+                <label>Until</label>
+                <input type="date" placeholder="until" id="untilDate" name="untilDate" required>
+                <br><br>
+                <input class="btn" type="submit" value="Send Message">
+            </form>
+        </section>
+
+        <section class="payment">
+            <div style="
+                position: relative;
+                left: 250px;
+                overflow: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                width: 259px;
+                background: #FFFFFF;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
+                border-radius: 10px;
+                font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif;
+                ">
+                <div style="padding: 20px;">
+                    <a target="_blank" href="https://checkout.square.site/merchant/ML475X6KVYQVH/checkout/WNWZHWH4Q57G633J5E2ZR3PA?src=embed" style="
+                    display: inline-block;
+                    font-size: 18px;
+                    line-height: 48px;
+                    height: 48px;
+                    color: #ffffff;
+                    min-width: 212px;
+                    background-color: #006aff;
+                    text-align: center;
+                    box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+                    border-radius: 6px;
+                ">Buy now</a>
+                </div>
+            </div>
+
+            <div>
+                <div style="
+                position: relative;
+                left: 250px;
+                overflow: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                width: 259px;
+                background: #FFFFFF;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
+                border-radius: 10px;
+                font-family: Work Sans, SQ Market, Helvetica, Arial, sans-serif;
+                ">
+                <div style="padding: 20px;">
+                    <p style="
+                  font-size: 18px;
+                  line-height: 20px;
+                ">Okaeri</p>
+                    <p style="
+                  font-size: 18px;
+                  line-height: 20px;
+                  font-weight: 600;
+                ">¥10,000</p>
+                  <a target="_blank" data-url="https://square.link/u/g4l66XiQ?src=embd" href="https://square.link/u/g4l66XiQ?src=embed" style="
+                  display: inline-block;
+                  font-size: 18px;
+                  line-height: 48px;
+                  height: 48px;
+                  color: #ffffff;
+                  min-width: 212px;
+                  background-color: #2693ff;
+                  text-align: center;
+                  box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+                  border-radius: 50px;
+                ">Pay now</a>
+                </div>
+                  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
+              </div>
+              
+              
+                <script>
+
+                </script>
+              </div>
+        </section>
+
+    </div>
+
+    <footer class="page-footer">
+        <div class="copyright">Copyright &copy; 2024 Okaeri Locker | All rights reserved</div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li>|</li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
+    

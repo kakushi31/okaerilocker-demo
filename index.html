@@ -114,7 +114,17 @@
                 <img src="images/travel-icon.png" alt="Okaeri Locker Home">
             </div>
             <form action="https://formsubmit.co/mibitaro@gmail.com" method="POST" name="booking-form" id="bookingForm" onsubmit="return validateForm()">
+                <!--HoneyPot-->
+                <input type="text" name="_honey" style="display: none;">
+                <!--DisableCaptcha-->
+                <input type="hidden" name="_captcha" value="false">
+                <!--SuccessPage-->
+                <input type="hidden" name="_next" value="https://kakushi31.github.io/okaerilocker-demo/success.html">
+                
+
+                
                 <h3 id="BOOK-NOW">Book now</h3>
+                <p>All fields must be filled.</p>
                 <label for="FullName">Name</label>
                 <input type="text" placeholder="Name as in passport" id="FullName" name="Name" maxlength="50" required>
                 <br><br>

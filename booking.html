@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Rent a space to store your luggage until you come back to Japan">
-        <title>Okaeri Locker | Contact Us</title>
+        <title>Okaeri Locker | Pricing</title>
         <link 
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
             rel="stylesheet" 
@@ -38,9 +38,9 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link" href="index.html">Home</a>
-                        <a class="nav-link" href="booking.html">Booking</a>
+                        <a class="nav-link active" href="booking.html">Booking</a>
                         <a class="nav-link" href="FAQ.html">FAQ</a>
-                        <a class="nav-link active" href="contact-us.html">Contact Us</a>
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
                     </div>
                 </div>
             </nav>
@@ -55,45 +55,73 @@
                     <p>We rent you a space to store your luggage until you come back to Japan</p>
                 </div>
             </div>
-            
-            <div class="container">
+
+            <!-- <div class="container">
+                
                 <div class="singleCol">
-                    <h2 >Contact Us</h2>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>
-                                Email: <a href="mailto:inquiry@okaerilocker.com">inquiry@okaerilocker.com</a>
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <form
-                            action="https://submit-form.com/bOFkVHO8y" 
-                            method="POST" 
-                            data-botpoison-public-key="pk_1bcaffc9-cccc-4a5c-8889-2636e0717316"
-                            target="_blank"
-                        >
-                            <div class="form-group">
-                                <label>Name: </label>
-                                <input type="text" name="name" required class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label>Email Address:</label>
-                                <input type="email" name="email" required class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label>Comments:</label>
-                                <textarea
-                                    class="form-control"
-                                    name="comments"
-                                    rows="3"
-                                    required
-                                ></textarea>
-                            </div>
-                            <button type="submit" class="button">Submit</button>
-                        </form>
-                        </div>
-                    </div>
+                    <h2 >Pricing</h2>
+                    <div>Put the contents here</div>
                 </div>
+
+            </div> -->
+
+            <div class="booking">
+                <form 
+                    action="https://formsubmit.co/a083f153bf3c1f68cd0614ef0dca21b3" 
+                    method="POST" 
+                    name="booking-form" 
+                    id="bookingForm" 
+                    onsubmit="return validateForm()"
+                > 
+                    <!--HoneyPot-->
+                    <input type="text" name="_honey" style="display: none;">
+                    <!--DisableCaptcha-->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!--SuccessPage-->
+                    <input type="hidden" name="_next" value="https://kakushi31.github.io/okaerilocker-demo/success.html">
+                        
+                    <h3 class="book-now" id="book-now">Book Now</h3>
+                    <p class="small">All fields must be filled.</p>
+                    
+                    <label for="FullName">Name :</label>
+                    <input 
+                        type="text" 
+                        placeholder="Name as in passport" 
+                        id="FullName" 
+                        name="Name" 
+                        maxlength="50" 
+                        required
+                        >
+                    <br><br>
+                    
+                    <label for="Email">Email :</label>
+                    <input 
+                        type="email" 
+                        placeholder="example@example.com" 
+                        id="Email" 
+                        name="Email" 
+                        maxlength="50" 
+                        required
+                    >
+                    <br><br>
+                    
+                    <div class="phone-inputs">
+                        <label for="CountryCode PhoneNumber">Phone :</label>
+                        <input type="tel" id="countryCode" name="CountryCode" placeholder="Code" style="width: 60px;" maxlength="4" required>
+                        <input type="tel" id="phoneNumber" name="PhoneNumber" placeholder="Phone Number" maxlength="15" required>
+                    </div>
+                    <br>
+
+                    <label for="FromDate">From:</label>
+                    <input type="date" id="fromDate" name="FromDate" required>
+                    <br>
+                    
+                    <label for="UntilDate">Until :</label>
+                    <input type="date" id="untilDate" name="untilDate" required>
+                    <br><br>
+                    
+                    <input class="button" type="submit" value="Send Message">
+                </form>
             </div>
         </div>
 

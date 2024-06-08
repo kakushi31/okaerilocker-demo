@@ -2,6 +2,13 @@ body {
     background-color: rgba(253, 238, 244, 0.2);
     font-family: "M PLUS Rounded 1c", helvetica, sans-serif;
     font-style: normal;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.site-content {
+    flex:1;
 }
 
 .logo {
@@ -34,7 +41,7 @@ body {
 
 .masthead2 {
     width: 100%;
-    min-height: 10vh;
+    min-height: 15vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

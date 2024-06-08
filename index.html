@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
         <meta name="description" content="Rent a space to store your luggage until you come back to Japan">
         <title>Okaeri Locker | Home</title>
         <link 
@@ -37,8 +37,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link" href="index.html">Home</a>
-                        <a class="nav-link" href="pricing.html">Pricing</a>
+                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="booking.html">Booking</a>
                         <a class="nav-link" href="FAQ.html">FAQ</a>
                         <a class="nav-link" href="contact-us.html">Contact Us</a>
                     </div>
@@ -67,7 +67,7 @@
                     </p>
                 </div>
 
-                <button class="button" onclick="window.location.href='index.html#book-now';"> Book Now! </button>
+                <button class="button" onclick="window.location.href='booking.html'"> Book Now! </button>
 
                 <div class="singleCol">
                     <div class="flow">
@@ -120,6 +120,8 @@
                         </div>
                     </div>
 
+                    <button class="button" onclick="window.location.href='booking.html'"> Book Now! </button>
+
                     <div class="review">
                         <h3 class="heading-large">What others say</h3>
                         <p id="review-desc">These are testimonials from customers who have used Okaeri Locker.</p>
@@ -150,65 +152,6 @@
                     </div>
 
                 </div>
-            </div>
-            
-            <div class="booking">
-                <form 
-                    action="https://submit-form.com/bOFkVHO8y" 
-                    method="POST" 
-                    data-botpoison-public-key="pk_1bcaffc9-cccc-4a5c-8889-2636e0717316"
-                    target="_blank"
-                    onsubmit="return validateForm()"
-                > 
-                    <!--HoneyPot-->
-                    <!-- <input type="text" name="_honey" style="display: none;"> -->
-                    <!--DisableCaptcha-->
-                    <!-- <input type="hidden" name="_captcha" value="false"> -->
-                    <!--SuccessPage-->
-                    <!-- <input type="hidden" name="_next" value="https://kakushi31.github.io/okaerilocker-demo/success.html"> -->
-                        
-                    <h3 class="book-now" id="book-now">Book Now</h3>
-                    <p class="small">All fields must be filled.</p>
-                    
-                    <label for="FullName">Name :</label>
-                    <input 
-                        type="text" 
-                        placeholder="Name as in passport" 
-                        id="FullName" 
-                        name="Name" 
-                        maxlength="50" 
-                        required
-                        >
-                    <br><br>
-                    
-                    <label for="Email">Email :</label>
-                    <input 
-                        type="email" 
-                        placeholder="example@example.com" 
-                        id="Email" 
-                        name="Email" 
-                        maxlength="50" 
-                        required
-                    >
-                    <br><br>
-                    
-                    <div class="phone-inputs">
-                        <label for="CountryCode PhoneNumber">Phone :</label>
-                        <input type="tel" id="countryCode" name="CountryCode" placeholder="Code" style="width: 60px;" maxlength="4" required>
-                        <input type="tel" id="phoneNumber" name="PhoneNumber" placeholder="Phone Number" maxlength="15" required>
-                    </div>
-                    <br>
-
-                    <label for="FromDate">From:</label>
-                    <input type="date" id="fromDate" name="FromDate" required>
-                    <br>
-                    
-                    <label for="UntilDate">Until :</label>
-                    <input type="date" id="untilDate" name="untilDate" required>
-                    <br><br>
-                    
-                    <input class="button" type="submit" value="Send Message">
-                </form>
             </div>
         </div>
 

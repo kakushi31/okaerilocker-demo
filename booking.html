@@ -76,16 +76,16 @@
                     target="_blank"
                     onsubmit="return validateForm()"
                 > 
-                    <!--HoneyPot-->
-                    <!-- <input type="text" name="_honey" style="display: none;"> -->
-                    <!--DisableCaptcha-->
-                    <!-- <input type="hidden" name="_captcha" value="false"> -->
-                    <!--SuccessPage-->
-                    <!-- <input type="hidden" name="_next" value="https://kakushi31.github.io/okaerilocker-demo/success.html"> -->
-
+                    <!-- HoneyPot -->
+                    <input type="checkbox" name="custom-field" style="display:none" tabindex="-1" autocomplete="off">
+                    <!-- SuccessPage -->
+                    <input type="hidden" name="_redirect" value="https://kakushi31.github.io/okaerilocker-demo/success.html">
+                    <!-- ErrorPage -->
+                    <input type="hidden" name="_error" value="https://kakushi31.github.io/okaerilocker-demo/error.html" />
+                        
                     <h3 class="book-now" id="book-now">Book Now</h3>
                     <p class="small">All fields must be filled.</p>
-
+                    
                     <label for="FullName">Name :</label>
                     <input 
                         type="text" 
@@ -96,7 +96,7 @@
                         required
                         >
                     <br><br>
-
+                    
                     <label for="Email">Email :</label>
                     <input 
                         type="email" 
@@ -107,7 +107,7 @@
                         required
                     >
                     <br><br>
-
+                    
                     <div class="phone-inputs">
                         <label for="CountryCode PhoneNumber">Phone :</label>
                         <input type="tel" id="countryCode" name="CountryCode" placeholder="Code" style="width: 60px;" maxlength="4" required>
@@ -118,11 +118,11 @@
                     <label for="FromDate">From:</label>
                     <input type="date" id="fromDate" name="FromDate" required>
                     <br>
-
+                    
                     <label for="UntilDate">Until :</label>
                     <input type="date" id="untilDate" name="untilDate" required>
                     <br><br>
-
+                    
                     <input class="button" type="submit" value="Send Message">
                 </form>
             </div>
@@ -141,6 +141,8 @@
                 <p class="small">&copy; <span id="year"></span>, Okaeri Locker</p>
             </div>
         </footer>
+
+        <script src="https://unpkg.com/@botpoison/browser" async></script>
 
         <script>
             document.getElementById("year").innerHTML = new Date().getFullYear();

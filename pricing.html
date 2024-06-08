@@ -74,7 +74,7 @@
                     name="booking-form" 
                     id="bookingForm" 
                     onsubmit="return validateForm()"
-                >
+                > 
                     <!--HoneyPot-->
                     <input type="text" name="_honey" style="display: none;">
                     <!--DisableCaptcha-->
@@ -109,17 +109,17 @@
                     
                     <div class="phone-inputs">
                         <label for="CountryCode PhoneNumber">Phone :</label>
-                        <input type="text" id="CountryCode" name="CountryCode" placeholder="+Code" style="width: 60px;" maxlength="6" required>
-                        <input type="telephone" id="PhoneNumber" name="PhoneNumber" placeholder="Phone Number" maxlength="15" required>
+                        <input type="tel" id="countryCode" name="CountryCode" placeholder="Code" style="width: 60px;" maxlength="4" required>
+                        <input type="tel" id="phoneNumber" name="PhoneNumber" placeholder="Phone Number" maxlength="15" required>
                     </div>
                     <br>
 
                     <label for="FromDate">From:</label>
-                    <input type="date" placeholder="YYYY-MM-DD" id="FromDate" name="FromDate" required>
+                    <input type="date" id="fromDate" name="FromDate" required>
                     <br>
                     
                     <label for="UntilDate">Until :</label>
-                    <input type="date" placeholder="until" id="UntilDate" name="untilDate" required>
+                    <input type="date" id="untilDate" name="untilDate" required>
                     <br><br>
                     
                     <input class="button" type="submit" value="Send Message">

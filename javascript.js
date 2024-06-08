@@ -40,3 +40,25 @@ document.getElementById("phoneNumber").addEventListener("input", function() {
         this.value = this.value.slice(0, 15); // Limit to 15 characters
     }
 });
+
+
+// Botpoison spam protection setup
+import axios from "axios";
+
+    // 1. Import the library
+import Botpoison from "@botpoison/browser";
+
+    // 2. Create a new instance with your public key
+const botpoison = new Botpoison({
+    publicKey: 'pk_1bcaffc9-cccc-4a5c-8889-2636e0717316'
+});
+
+const sendMessage = async (message) => {
+      // 3. Process a challenge
+  const { solution } = await botpoison.challenge();
+  await axios.post("https://example.demo", {
+    message,
+        // 4. Forward the solution
+    _botpoison: solution,
+  });
+}

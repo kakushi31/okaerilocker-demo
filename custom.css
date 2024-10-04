@@ -197,6 +197,7 @@ input {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    padding: 10px 15px;
 }
 
 .booking p {

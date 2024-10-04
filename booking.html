@@ -12,6 +12,8 @@
             gtag('config', 'G-8JWLL3FTBM');
         </script>
 
+        <script rel="function" src="javascript.js" defer></script>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
         <meta name="description" content="Rent a space to store your luggage until you come back to Japan">
@@ -88,14 +90,15 @@
             </div>
 
             <div class="booking">
-                <form 
+                <form
                     action="https://submit-form.com/bOFkVHO8y" 
-                    method="POST" 
                     data-botpoison-public-key="pk_1bcaffc9-cccc-4a5c-8889-2636e0717316"
+                    method="POST"
                     target="_blank"
-                    onsubmit="return validateForm()"
+                    id="booking-form"
                 > 
-                    <!-- HoneyPot -->
+ 
+                   <!-- HoneyPot -->
                     <input type="checkbox" name="custom-field" style="display:none" tabindex="-1" autocomplete="off">
                     <!-- SuccessPage -->
                     <input type="hidden" name="_redirect" value="https://www.okaerilocker.com/success.html">
@@ -112,6 +115,7 @@
                         id="FullName" 
                         name="Name" 
                         maxlength="50" 
+                        autocomplete="On"
                         required
                         >
                     <br><br>
@@ -123,23 +127,24 @@
                         id="Email" 
                         name="Email" 
                         maxlength="50" 
+                        autocomplete="On"
                         required
                     >
                     <br><br>
                     
                     <div class="phone-inputs">
-                        <label for="CountryCode PhoneNumber">Phone :</label>
-                        <input type="tel" id="countryCode" name="CountryCode" placeholder="Code" style="width: 60px;" maxlength="4" required>
-                        <input type="tel" id="phoneNumber" name="PhoneNumber" placeholder="Phone Number" maxlength="15" required>
+                        <label for="CountryCode" for="PhoneNumber">Phone :</label>
+                        <input type="tel" id="CountryCode" name="CountryCode" placeholder="Code" style="width: 60px;" maxlength="4" required>
+                        <input type="tel" id="PhoneNumber" name="PhoneNumber" placeholder="Phone Number" maxlength="15" required>
                     </div>
                     <br>
 
                     <label for="FromDate">From:</label>
-                    <input type="date" id="fromDate" name="FromDate" required>
+                    <input type="date" id="FromDate" name="FromDate" required>
                     <br>
                     
                     <label for="UntilDate">Until :</label>
-                    <input type="date" id="untilDate" name="untilDate" required>
+                    <input type="date" id="UntilDate" name="UntilDate" required>
                     <br><br>
 
                     <label for="Quantity">Quantity :</label>
@@ -178,13 +183,15 @@
 
                     <label for="BookComments">Comments :</label>
                     <textarea
+                        id="BookComments"
                         class="form-control"
                         name="comments-book"
                         rows="3"
                         maxlength="150"
                     ></textarea>
 
-                    <input class="button" type="submit" value="Send Message">
+                    <input class="button" id="button" type="submit" value="Send Message">
+
                 </form>
             </div>
         </div>
@@ -208,8 +215,6 @@
         <script>
             document.getElementById("year").innerHTML = new Date().getFullYear();
         </script>
-
-        <script rel="function" src="javascript.js"></script>
 
         <script 
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 

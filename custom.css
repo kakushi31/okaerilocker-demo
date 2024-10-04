@@ -193,6 +193,10 @@ input {
     color: red;
 }
 
+#simple-pic {
+    height: 33.33vh;
+}
+
 footer {
     /* background-color: gray; */
     padding: 5rem 0rem;

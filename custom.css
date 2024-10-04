@@ -49,6 +49,16 @@ body {
     position: relative;
 }
 
+.in-pic {
+    width: 100%;
+    max-width:max-content;
+    min-height: 20vh;
+    min-width: 30vh;
+    background-size: cover;
+    margin-bottom: 10px;
+    position: relative;
+}
+
 .black-overlay {
     display: webkit-flex;
     display: flex;
